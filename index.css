@@ -154,3 +154,37 @@ article
 
 
 
+
+
+@media all and (max-width:1170px)
+{
+    section
+{
+    height: 300dvh;
+}
+}
+
+
+@media all and (max-width:700px)
+{
+    section
+{
+    height: 350dvh;
+}
+}
+
+@media all and (max-width:468px)
+{
+    .btn
+{
+    height: 75px;
+    width: 100px;
+    border-radius: 0px;
+    margin: 5px;
+}
+
+section
+{
+    height: 20dvh;
+}
+}
