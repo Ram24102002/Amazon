@@ -5,6 +5,23 @@
     /* overflow: hidden; */
 }
 
+a
+{
+    text-decoration: none;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+.badge
+{
+    height: 16px;
+    width: 40px;
+}
+
+
 body
 {
     height: 100%;
@@ -17,9 +34,10 @@ body
     height: 22px;
 }
 
-.navbar-brand img
+.navbar-brand
 {
     margin-left: 50px;
+    margin-bottom: 10px;
     height: 30px;
 }
 
@@ -27,6 +45,18 @@ body
 {
     margin: 0px 50px 0px 50px;
     color: aliceblue;
+    cursor: pointer;
+}
+
+
+.Help
+{
+    margin-bottom: -10px;
+    transition: .5s;
+}
+.Help :hover
+{
+    color: rgb(250, 216, 65);
 }
 
 .smile
@@ -41,10 +71,6 @@ body
 }
 
 
-.smile:hover
-{
-    
-}
 
 
 
