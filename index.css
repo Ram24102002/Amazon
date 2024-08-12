@@ -72,10 +72,6 @@ body
 }
 
 
-.LMT
-{
-    margin-top: 30px;
-}
  
 .smile:hover
 {
@@ -217,7 +213,13 @@ article
 
 
 
-
+@media all and (min-width:1180px) {
+    
+.LMT
+{
+    margin-top: 30px;
+}
+}
 
 
 @media all and (max-width:1170px)
