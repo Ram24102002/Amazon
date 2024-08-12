@@ -65,7 +65,7 @@
 
 
 
-      <section>
+      <section class="LMT">
 
         
 
@@ -104,8 +104,6 @@
 
 
             
-            <a href="" class="btn button-26" type="button"  onclick="window.open('');"><b>+</b></a>
-            
             <a href="" class="btn button-26" type="button"   data-bs-toggle="modal" data-bs-target="#exampleModal" ><b>+</b></a>
 
           </article>
@@ -127,10 +125,12 @@
             <a href="" class="btn button-26" type="button" onclick="window.open('https://phonetool.amazon.com/');"><b>Phonetool</b></a>
             <a href="" class="btn button-26" type="button" onclick="window.open('https://atoz.amazon.work/time');"><b>Time off & leave</b></a>
             <a href="" class="btn button-26" type="button" onclick="window.open('https://atoz.amazon.work/');"><b>AtoZ</b></a>
+            <a href="" class="btn button-26" type="button" onclick="window.open('https://www.allsechro.com/AmazonSSO/');"><b>Pay</b></a>
             <a href="" class="btn button-26" type="button" onclick="window.open('https://knet.csod.com/ui/lms-learner-home/home?');"><b>Knet</b></a>
             <a href="" class="btn button-26" type="button" onclick="window.open('https://password-v2.corp.amazon.com/');"><b>Password Tool</b></a>
             <a href="" class="btn button-26" type="button" onclick="window.open('https://inside.amazon.com/en/Pages/default.aspx');"><b>Inside Amazon</b></a>
-            <a href="" class="btn button-26" type="button" onclick="window.open('https://atoz.amazon.work/myhr?');"><b>My HR</b></a>
+            <a href="" class="btn button-26" type="button" onclick="window.open('https://atoz.amazon.work/myhr?');"><b>My HR</b></a><a href="" class="btn button-26" type="button"   data-bs-toggle="modal" data-bs-target="#exampleModal" ><b>+</b></a>
+
           </article>
         </aside>
 
@@ -246,7 +246,7 @@
       <a href="tel: +91 7305790119"><li><p><i class="fa-solid fa-phone"></i> +91 7305790119</p></li></a>
       
     </ul>
-    <a href=""  ><p  class="position-absolute bottom-0 translate-middle end-0"><i class="fa-brands fa-bots"></i> Chat Bot  <span style="padding: 0; margin-bottom: 5px;" class="badge text-bg-primary">beta</span> </p></a>
+ <button style="background-color: transparent;" onclick="callToast()" id="liveToastBtn" class="position-absolute bottom-0 translate-middle end-0"><i class="fa-brands fa-bots"></i> Chat Bot  <span style="padding: 0; margin-bottom: 5px;" class="badge text-bg-primary">beta</span> </button>
     
     
    
@@ -255,18 +255,17 @@
 
 
 
-<button type="button"  class="btn btn-primary" id="liveToastBtn">Show live toast</button>
-
-<div class="toast-container position-fixed bottom-0 end-0 p-3">
+<!-- <button type="button"  class="btn btn-primary" onclick="callToast()" id="liveToastBtn">Show live toast</button> -->
+<div class="toast-container position-fixed bottom-50 top-50 start-50  p-3">
   <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      <img src="..." class="rounded me-2" alt="...">
-      <strong class="me-auto">Bootstrap</strong>
-      <small>11 mins ago</small>
+      <img style="height: 20px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7RD-D6qOKEzNbsWfnBUjSfQv4GYF3jBJloA&s" class="rounded me-2" alt="...">
+      <strong class="me-auto">Chat Bot</strong>
+      <small>Just Now</small>
       <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
     <div class="toast-body">
-      Hello, world! This is a toast message.
+      Chat Bot is Still in Development Stage.
     </div>
   </div>
 </div>

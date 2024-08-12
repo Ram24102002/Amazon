@@ -39,7 +39,7 @@ form.addEventListener('submit', function(e) {
 
 
 
-// callToast("click" function(){
+function callToast() {
     const toastTrigger = document.getElementById('liveToastBtn')
 const toastLiveExample = document.getElementById('liveToast')
 
@@ -48,5 +48,4 @@ if (toastTrigger) {
   toastTrigger.addEventListener('click', () => {
     toastBootstrap.show()
   })
-}
-// })
+}}
