@@ -49,14 +49,14 @@
               
               <a class="nav-link" onclick="window.open('https://inside.amazon.com/en/Pages/default.aspx')"><img src="https://inside.amazon.com/SiteAssets/content/images/amz/amazon-logo.png" alt="Inside Amazon"></a>
               
-              
+              <a class="nav-link" style="display: flex; margin-top: 5px;" data-bs-toggle="modal" data-bs-target="#toolModal"><h6 style="margin-bottom: 0px; ">Tools</h6>&nbsp; <img class="chat-gpt" style="border-radius: 50%;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHKxQtTU1gcLtYCYf5HR850kZ5fwGF5dJaVw&s" alt=""></a>
+            
               
               <!-- <a class="nav-link mx-auto disabled" aria-disabled="true">Disabled</a> -->
             
             
             </div>
-            
-            <a class="nav-link Help ms-auto"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" ><p>Help <i class="fa-solid fa-circle-question"></i></p></button></a>
+            <a class="nav-link Help ms-auto"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" ><p>Help <i class="fa-solid fa-circle-question"></i></p></a>
           </div>
         </div>
       </nav>
@@ -125,6 +125,7 @@
             <a href="" class="btn button-26" type="button" onclick="window.open('https://phonetool.amazon.com/');"><b>Phonetool</b></a>
             <a href="" class="btn button-26" type="button" onclick="window.open('https://atoz.amazon.work/time');"><b>Time off & leave</b></a>
             <a href="" class="btn button-26" type="button" onclick="window.open('https://atoz.amazon.work/');"><b>AtoZ</b></a>
+            <a href="" class="btn button-26" type="button" onclick="window.open('https://us2.concursolutions.com/home');"><b>Reimbersment</b></a>
             <a href="" class="btn button-26" type="button" onclick="window.open('https://www.allsechro.com/AmazonSSO/');"><b>Pay</b></a>
             <a href="" class="btn button-26" type="button" onclick="window.open('https://knet.csod.com/ui/lms-learner-home/home?');"><b>Knet</b></a>
             <a href="" class="btn button-26" type="button" onclick="window.open('https://password-v2.corp.amazon.com/');"><b>Password Tool</b></a>
@@ -207,8 +208,8 @@
           <input type="hidden" name="access_key" value="893f2719-7d2e-4cfc-9cc3-8f756b82ffd7">
       
           <!-- <input type="text" name="name" required> -->
-           <label for="name">Your Alieas :</label>
-          <input type="name" name="email" required>
+           <label for="name"><div ><p>Your Alieas : <i title="Your Login is optional"><i class="fa-solid fa-circle-exclamation"></i></i></p></div></label>
+          <input type="name" placeholder="Your Login" name="email" >
           <label for="message">Your Suggestions :</label>
           <textarea placeholder="Example: Adding this Button would be very Useful..." name="message" required></textarea>
           <!-- <input type="checkbox" name="botcheck" class="hidden" style="display: none;"> -->
@@ -229,6 +230,38 @@
 
 
 
+
+<!-- Tool Modal ---------------->
+
+
+<div class="modal  fade" id="toolModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Tools <i class="fa-solid fa-screwdriver-wrench"></i></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul class="tool-ul">
+          <li class="item-link" onclick="window.open('https://quillbot.com/paraphrasing-tool')"> <img class="tool-link-icon" src="https://i.pinimg.com/736x/3a/f2/84/3af284fafb581a4796bce36c09c2816d.jpg"  alt="">&nbsp;&nbsp; <p>QuillBot</p></li><br>
+          <li class="item-link" onclick="window.open('https://chatgpt.com/')"> <img  class="tool-link-icon" src="https://static.vecteezy.com/system/resources/previews/022/227/364/non_2x/openai-chatgpt-logo-icon-free-png.png" alt="">&nbsp;&nbsp; <p> Chat-GPT</p></li><br>
+          <li class="item-link" onclick="window.open('https://gemini.google.com/')"><img  class="tool-link-icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThr7qrIazsvZwJuw-uZCtLzIjaAyVW_ZrlEQ&s" alt="">&nbsp;&nbsp; <p>Gemini</p></li><br>
+          <li class="item-link" onclick="window.open('https://www.google.com/')"><img  class="tool-link-icon" src="https://cdn4.iconfinder.com/data/icons/logos-brands-7/512/google_logo-google_icongoogle-512.png" alt="">&nbsp;&nbsp; <p>Google</p></li><br>
+          <!-- <li class="item-link" onclick="window.open('')"></li> -->
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
 <!-- Help offcanva --------------------->
 
 <div class="offcanvas help-canva offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -240,10 +273,12 @@
     <h6>Contact the Developer <i class="fa-brands fa-connectdevelop"></i></h6>
     <br>
     <ul>
-      <a href="https://slack.com/app_redirect?channel=@ramjaas"><li><p><i class="fa-brands fa-slack"></i> Slack Me</p></li></a>
-      <a href="https://app.chime.aws/conversations/new?email=ramjaas@amazon.com"><li><p><i class="fa-brands fa-amazon"></i> Chime Me</p></li></a>
-      <a href="mailto:ramjaas@amazon.com"><li><p><i class="fa-regular fa-envelope"></i> Email</p></li></a>
-      <a href="tel: +91 7305790119"><li><p><i class="fa-solid fa-phone"></i> +91 7305790119</p></li></a>
+      <a href="" onclick="window.open('https://slack.com/app_redirect?channel=@ramjaas')"><li><p><i class="fa-brands fa-slack"></i> Slack Me</p></li></a>
+      <a href="" onclick="window.open('https://app.chime.aws/conversations/new?email=ramjaas@amazon.com')"><li><p><i class="fa-brands fa-amazon"></i> Chime Me</p></li></a>
+      <a href="" onclick="window.open('mailto:ramjaas@amazon.com')"><li><p><i class="fa-regular fa-envelope"></i> Email</p></li></a>
+      <a href="" onclick="window.open('tel: +91 7305790119')"><li><p><i class="fa-solid fa-phone"></i> +91 7305790119</p></li></a>
+      <br><br><br>
+      <a href="" onclick="window.open('https://github.com/Ram24102002/Amazon')"><h5 style="color: black;"><i class="fa-brands fa-github"></i> &nbsp;Source Code</i></h5></a>
       
     </ul>
  <button style="background-color: transparent;" onclick="callToast()" id="liveToastBtn" class="position-absolute bottom-0 translate-middle end-0"><i class="fa-brands fa-bots"></i> Chat Bot  <span style="padding: 0; margin-bottom: 5px;" class="badge text-bg-primary">beta</span> </button>
